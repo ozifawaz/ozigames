@@ -1,0 +1,27 @@
+<body>
+	<head>
+		<a> Congrats! </a>
+	</head>
+	<p>Level 2</p>
+	now, <a href = "image.html">Click Me</a>. The answer lies in the picture. (inspecting this page is cheating)
+	<script>
+		function enter()
+		{
+			p=prompt("What is the file name?")
+			if(p == "catsveryCUTE.png")
+			{
+				alert("Correct!")
+				window.location.href = "wwinrell.html"
+			}
+			else if (p=="again")
+			{
+				alert("Did you really just actually try again :/")
+			}
+			else 
+			{
+				alert("Incorrect! Try again.")
+			}
+		}
+	</script>
+	<button onclick="enter()">Click me when you have the answer</button>
+</body>
